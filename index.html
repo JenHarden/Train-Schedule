@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Train Schedule</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Lilita+One" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" id="title">
+            <h1 id="logo">Sunflower Express</h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <p id="title-text">We have the connections</p>
+            <h5>Current Time: <span id="currentTime"></span></h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-xs-12 col-sm-9">
+                <div class="card" id="schedule">
+                    <div class="card-header">
+                        <h5>Train Schedule</h5>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                    <table class="table table-hover" id="train-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                                <!-- <th scope="col" class="text-center">Remove</th> -->
+                            </tr>
+                        </thead>
+                        <tbody id="train-table-rows">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="card text-white bg-dark" id="admin-panel">
+                    <div class="card-header">
+                        <h5>Add New Train</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Train Name</label>
+                                <input type="text" class="form-control form-field" id="train-name">
+                            </div>
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input type="text" class="form-control form-field" id="destination">
+                            </div>
+                            <div class="form-group">
+                                <label>First Train Time: HH:mm (military time)</label>
+                                <input type="text" class="form-control form-field" id="first-train">
+                            </div>
+                            <div class="form-group">
+                                <label>Frequency (min)</label>
+                                <input type="text" class="form-control form-field" id="frequency">
+                            </div>
+                            <button type="submit" class="btn btn-secondary" id="submit">Add Train</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Administrator section that will allow the following to be added:  Train Name, Destination, First Train Time (military time), Frequency -->
+    <!-- Code the app to calcuate when the next train will arrive; this should be relative to the current time -->
+    <!-- Users from many different machines must be able to view same train times -->
+
+    <!-- BONUS -->
+    <!-- update the "mintues to arrival" and "next train time" text every minute -->
+    <!-- try adding "update" and "remove" buttons for each train -->
+
+    <!-- CHALLENGE -->
+    <!-- only allow users who log into the site with their Google or GitHub accounts to use the site.  Think Firebase authentication -->
+
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/script.js"></script> -->
+</body>
+
+</html>

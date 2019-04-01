@@ -1,0 +1,46 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/station.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#title {
+    background-color: rgba(0, 0,0, 0.5);
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#logo {
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+}
+
+#title-text {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 25px;
+}
+
+th {
+    font-weight: bold;
+}
+
+#schedule {
+    border: 1px solid black;
+}
+
+#admin-panel {
+    border: 1px solid white;
+}
