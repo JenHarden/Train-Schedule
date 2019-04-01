@@ -38,6 +38,7 @@
                     <div class="card-header">
                         <h5>Train Schedule</h5>
                     </div>
+
                     <div class="card-body">
                     </div>
                     <table class="table table-hover" id="train-table">
@@ -51,16 +52,20 @@
                                 <!-- <th scope="col" class="text-center">Remove</th> -->
                             </tr>
                         </thead>
-                        <tbody id="train-table-rows">
-                        </tbody>
+
+                        <tbody id="train-table-rows"></tbody>
                     </table>
                 </div>
             </div>
+
+            <!-- Administrator section that will allow new trains to be added -->
+
             <div class="col-xs-12 col-sm-3">
                 <div class="card text-white bg-dark" id="admin-panel">
                     <div class="card-header">
                         <h5>Add New Train</h5>
                     </div>
+
                     <div class="card-body">
                         <form>
                             <div class="form-group">
@@ -87,23 +92,6 @@
         </div>
     </div>
 
-
-    <!-- Administrator section that will allow the following to be added:  Train Name, Destination, First Train Time (military time), Frequency -->
-    <!-- Code the app to calcuate when the next train will arrive; this should be relative to the current time -->
-    <!-- Users from many different machines must be able to view same train times -->
-
-    <!-- BONUS -->
-    <!-- update the "mintues to arrival" and "next train time" text every minute -->
-    <!-- try adding "update" and "remove" buttons for each train -->
-
-    <!-- CHALLENGE -->
-    <!-- only allow users who log into the site with their Google or GitHub accounts to use the site.  Think Firebase authentication -->
-
-
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/script.js"></script> -->
 </body>
 
 </html>
